@@ -37,7 +37,7 @@
         android:id="@+id/percentResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="%40 BAŞARI"
+        android:text="%40 Success"
         android:textColor="#9C27B0"
         android:textSize="25dp"
         android:textStyle="normal"

@@ -18,7 +18,7 @@ class QuizActivity : AppCompatActivity() {
     private lateinit var questions : ArrayList<Bayraklar>
     private lateinit var falseOption : ArrayList<Bayraklar>
     private lateinit var trueQuestion : Bayraklar
-    private lateinit var allOption : HashSet<Bayraklar>    //sırayı karıştırıyor o yüzden HashSet kulandık
+    private lateinit var allOption : HashSet<Bayraklar>
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz)

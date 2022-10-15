@@ -18,10 +18,10 @@ class DataBaseHelper(mcontext :Context) :
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
-       // bir sıkıntı olduğu zaman tabloları silip yeniden oluşturduğumuz yer.
+
 
         db?.execSQL("DROP TABLE IF EXISTS bayraklar")
-        //yeniden yaratıyoruz oluşturuyoruz yani
+
         onCreate(db)
 
     }
