@@ -52,7 +52,7 @@ class QuizActivity : AppCompatActivity() {
         questionText.text ="${questionCounter + 1} . Question"
 
         trueQuestion = questions.get(questionCounter)
-      //dinamik olarak picture yükleme
+
         flagView.setImageResource(resources.getIdentifier(trueQuestion.bayrak_resim,"drawable",packageName))
 
         falseOption = BayraklarDao().randomFalseAnswer(vt,trueQuestion.bayrak_id)

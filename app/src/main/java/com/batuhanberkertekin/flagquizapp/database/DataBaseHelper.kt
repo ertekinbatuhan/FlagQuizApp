@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper
 class DataBaseHelper(mcontext :Context) :
     SQLiteOpenHelper(mcontext,"bayrakquiz.sqlite",null,1) {
     override fun onCreate(db: SQLiteDatabase?) {
-        //Tabloların tanımlandığı yer
+
 
         db?.execSQL("CREATE TABLE IF NOT EXISTS bayraklar(bayrak_no INTEGER PRIMARY KEY AUTOINCREMENT,bayrak_name TEXT ," +
                 "bayrak_resim TEXT);" )
@@ -18,10 +18,10 @@ class DataBaseHelper(mcontext :Context) :
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
-       // bir sıkıntı olduğu zaman tabloları silip yeniden oluşturduğumuz yer.
+      
 
         db?.execSQL("DROP TABLE IF EXISTS flags")
-        //yeniden yaratıyoruz oluşturuyoruz yani
+
         onCreate(db)
 
     }
