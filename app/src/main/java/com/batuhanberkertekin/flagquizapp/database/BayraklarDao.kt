@@ -1,4 +1,4 @@
-package com.batuhanberkertekin.flagquizapp
+package com.batuhanberkertekin.flagquizapp.database
 
 import android.annotation.SuppressLint
 import com.batuhanberkertekin.flagquizapp.data.Bayraklar

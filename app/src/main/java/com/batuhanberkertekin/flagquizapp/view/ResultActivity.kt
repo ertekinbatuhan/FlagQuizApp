@@ -1,8 +1,9 @@
-package com.batuhanberkertekin.flagquizapp
+package com.batuhanberkertekin.flagquizapp.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.batuhanberkertekin.flagquizapp.R
 import kotlinx.android.synthetic.main.activity_result.*
 
 class ResultActivity : AppCompatActivity() {
@@ -24,7 +25,7 @@ class ResultActivity : AppCompatActivity() {
         tryAgainButton.setOnClickListener {
 
 
-            val intent = Intent(applicationContext,MainActivity::class.java)
+            val intent = Intent(applicationContext, MainActivity::class.java)
             finish()
             startActivity(intent)
 

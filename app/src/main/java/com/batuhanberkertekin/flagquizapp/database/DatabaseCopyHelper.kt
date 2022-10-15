@@ -1,4 +1,4 @@
-package com.info.sqlitekullanimihazirveritabani
+package com.batuhanberkertekin.flagquizapp.database
 
 import android.content.Context
 import android.database.SQLException

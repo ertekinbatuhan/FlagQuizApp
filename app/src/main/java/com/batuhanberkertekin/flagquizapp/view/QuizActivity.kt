@@ -1,10 +1,12 @@
-package com.batuhanberkertekin.flagquizapp
+package com.batuhanberkertekin.flagquizapp.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.batuhanberkertekin.flagquizapp.R
 import com.batuhanberkertekin.flagquizapp.data.Bayraklar
+import com.batuhanberkertekin.flagquizapp.database.BayraklarDao
 import com.batuhanberkertekin.flagquizapp.database.DataBaseHelper
 import kotlinx.android.synthetic.main.activity_quiz.*
 

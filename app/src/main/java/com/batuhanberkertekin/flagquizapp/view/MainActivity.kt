@@ -1,9 +1,10 @@
-package com.batuhanberkertekin.flagquizapp
+package com.batuhanberkertekin.flagquizapp.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.info.sqlitekullanimihazirveritabani.DatabaseCopyHelper
+import com.batuhanberkertekin.flagquizapp.R
+import com.batuhanberkertekin.flagquizapp.database.DatabaseCopyHelper
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -13,7 +14,7 @@ class MainActivity : AppCompatActivity() {
            dataBaseCopy()
 
            startButton.setOnClickListener {
-               val intent = Intent(applicationContext,QuizActivity::class.java)
+               val intent = Intent(applicationContext, QuizActivity::class.java)
                startActivity(intent)
 
            }
